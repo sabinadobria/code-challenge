@@ -55,7 +55,7 @@ public class LightsServiceTest {
 
 		Mockito.when(LightsFileReader.getFileReader()).thenReturn(getFileReader(FILE_PATH));
 		counter = lightsService.readNumberOfLightFromFile(LightAction.BRIGHTNESS_CHANGE);
-		Assertions.assertEquals(19, counter);
+		Assertions.assertEquals(50, counter);
 	}
 
 	@Test
@@ -67,7 +67,7 @@ public class LightsServiceTest {
 
 		Mockito.when(LightsFileReader.getFileReader()).thenReturn(getFileReader(FILE_PATH_EXAMPLE));
 		counter = lightsService.readNumberOfLightFromFile(LightAction.BRIGHTNESS_CHANGE);
-		Assertions.assertEquals(1000000, counter);
+		Assertions.assertEquals(1003996, counter);
 	}
 
 	@Test

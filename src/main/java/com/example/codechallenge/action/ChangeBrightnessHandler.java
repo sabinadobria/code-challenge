@@ -46,9 +46,8 @@ public class ChangeBrightnessHandler implements ActionHandler {
 				lightsMap.computeIfPresent(light, (key,val) -> val + 1);
 				if(!lightsMap.containsKey(light)) {
 					lightsMap.put(light, 1);
-					counter++;
 				}
-
+				counter++;
 			}
 		}
 		return counter;
@@ -62,10 +61,10 @@ public class ChangeBrightnessHandler implements ActionHandler {
 					Integer brightnessLvl = lightsMap.get(light);
 					if(brightnessLvl - 1 == 0) {
 						lightsMap.remove(light);
-						counter--;
 					} else {
 						lightsMap.put(light, brightnessLvl - 1);
 					}
+					counter--;
 				}
 			}
 		}
@@ -79,8 +78,8 @@ public class ChangeBrightnessHandler implements ActionHandler {
 				lightsMap.computeIfPresent(light, (k,v) -> v + 2);
 				if(!lightsMap.containsKey(light)) {
 					lightsMap.put(light, 2);
-					counter++;
 				}
+				counter = counter + 2;
 			}
 		}
 		return counter;

@@ -7,6 +7,7 @@ public class LightsTestContants {
 	public static final String TOGGLE_LIGHTS_INVALID_COORDINATES = "toggle 2,1 through 1,2";
 	public static final String END_COORDINATES = "end";
 	public static final int NUMBER_OF_LIGHTS_ON = 4;
+	public static final int NUMBER_OF_LIGHTS_ON_AFTER_TOGGLE = 8;
 	public static final String INVALID_COORDINATES_START_X_ERROR = "turn on ,1 through 2,2";
 	public static final String INVALID_COORDINATES_START_Y_ERROR = "turn off 1, through 2,2";
 	public static final String INVALID_COORDINATES_END_X_ERROR = "turn off 1,1 through ,2";

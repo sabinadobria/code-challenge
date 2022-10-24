@@ -2,6 +2,7 @@ package com.example.codechallenge.action;
 
 import static com.example.codechallenge.utils.LightsTestContants.END_COORDINATES;
 import static com.example.codechallenge.utils.LightsTestContants.NUMBER_OF_LIGHTS_ON;
+import static com.example.codechallenge.utils.LightsTestContants.NUMBER_OF_LIGHTS_ON_AFTER_TOGGLE;
 import static com.example.codechallenge.utils.LightsTestContants.TOGGLE_LIGHTS;
 import static com.example.codechallenge.utils.LightsTestContants.TOGGLE_LIGHTS_INVALID_COORDINATES;
 import static com.example.codechallenge.utils.LightsTestContants.TURN_OFF_LIGHTS;
@@ -36,7 +37,7 @@ public class ChangeBrightnessHandlerTest {
 
 		// apply lights toggle -> brightness lvl = 2
 		counter = brightnessHandler.handle(TOGGLE_LIGHTS, lightsMap, counter);
-		Assertions.assertEquals(NUMBER_OF_LIGHTS_ON, counter);
+		Assertions.assertEquals(NUMBER_OF_LIGHTS_ON_AFTER_TOGGLE, counter);
 		lightsMap.forEach((key, value) -> Assertions.assertEquals(2, value));
 
 		// apply lights off -> brightness lvl = 1
